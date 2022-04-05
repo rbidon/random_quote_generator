@@ -3,6 +3,7 @@ console.log("Connected")
 const buttonElement = document.getElementById('quotebtn');
  const quotebox = document.getElementById('quotebox');
  const author = document.getElementById('author');
+ const heading = document.getElementById('headtitle');
 
          const url = "https://type.fit/api/quotes";
 // async/await function 
@@ -28,8 +29,8 @@ const buttonElement = document.getElementById('quotebtn');
             //  author innerHTML will display the random authors + added string
              author.innerHTML = '- ' + quoteAuthor;
 
+             heading.innerHTML = 'Look at that!'
              buttonElement.innerHTML = "Another Quote!"; 
-
             //  condition statement when the author is null 
              if (jsonResponse[index].author === null) {
                 author.innerHTML = "- "+ "Unknown";   
@@ -46,22 +47,22 @@ buttonElement.addEventListener('click', clickButton);
 //  response.status === 200;
 
 
-// Bonus Question
-const quotemebtn = document.getElementById('quotemebtn');
-const famousperson = document.getElementById('famous-select');
-const famousChoose = querySelector('select');
+// // Bonus Question
+// const quotemebtn = document.getElementById('quotemebtn');
+// const famousperson = document.getElementById('famous-select');
+// const famousChoose = querySelector('select');
 
-let quoteMeButton = async () => {
-    const selectedAuthor = author.value;
-    let selectedQuote = await clickButton();
-    selectedQuote.forEach( element => {
-        if(element.author === selectedAuthor) {
-            text.innerHTML
-            author.innerHTML = element.author.value;
-        }
-    }
+// let quoteMeButton = async () => {
+//     const selectedAuthor = author.value;
+//     let selectedQuote = await clickButton();
+//     selectedQuote.forEach( element => {
+//         if(element.author === selectedAuthor) {
+//             text.innerHTML
+//             author.innerHTML = element.author.value;
+//         }
+//     }
 
-    )
-};
+//     )
+// };
 
-quotemebtn.addEventListener('click', quoteMeButton);
+// quotemebtn.addEventListener('click', quoteMeButton);
