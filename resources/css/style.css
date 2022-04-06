@@ -8,8 +8,7 @@ body {
     background: url(../gradienta-P7KnvzCYDEQ-unsplash.jpg); 
 }
 #container {
-    margin-top: 100px;
-    
+    margin-top: 150px;
     position: relative;
     border: 1px solid transparent;
     opacity:0.8;
@@ -28,17 +27,19 @@ h1 {
     font-size:25px;
     margin-top: 30px;
     text-align: center;
+    font-style: italic;
 }
 #author {
     text-align: right;
     font-size: 22px;
+    font-style: italic;
 }
 .button {
     text-align: center;
     padding: 10px;
 }
 #quotebtn {
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 20px;
      font-size: 20px;
      font-weight: 500;
@@ -48,7 +49,8 @@ h1 {
      width: 150px;
      height: 50px;
      /* border-radius: 30px; */
-     background-color: aliceblue;
+     background-color: transparent;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #quotebtn:hover {
     color: #000000;
