@@ -11,7 +11,7 @@ body {
     margin-top: 100px;
     
     position: relative;
-    border: 1px solid black;
+    border: 1px solid transparent;
     opacity:0.8;
     width: 50rem;
     height: 25rem;
