@@ -7,7 +7,7 @@ const buttonElement = document.getElementById('quotebtn');
 
          const url = "https://type.fit/api/quotes";
 // async/await function 
- async function clickButton () {
+ async function clickButton (e) {
     //  try object
      try {
         //  assigned variable response to the fetch request of the url
@@ -29,8 +29,12 @@ const buttonElement = document.getElementById('quotebtn');
             //  author innerHTML will display the random authors + added string
              author.innerHTML = '- ' + quoteAuthor;
 
-             heading.innerHTML = 'Look at that!'
-             buttonElement.innerHTML = "Another Quote!"; 
+            
+             buttonElement.innerHTML = "Another Quote!";
+             heading.innerHTML = 'Want another quote?'
+                
+             
+              
             //  condition statement when the author is null 
              if (jsonResponse[index].author === null) {
                 author.innerHTML = "- "+ "Unknown";   

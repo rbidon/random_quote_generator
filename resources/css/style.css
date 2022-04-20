@@ -7,6 +7,7 @@ body {
     justify-content: center;
     background: url(../gradienta-P7KnvzCYDEQ-unsplash.jpg); 
 }
+/* quote box */
 #container {
     margin-top: 150px;
     position: relative;
@@ -14,16 +15,22 @@ body {
     opacity:0.8;
     width: 50rem;
     height: 25rem;
-    border-radius:20px;
+    border-radius: 15px 50px 30px;
+    /* border-radius:20px; */
     padding: 2rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
 h1 {
     text-align: center;
     margin: 0 auto;
+    border-radius: 30px;
+    background-color: white;
 }
-    #quotebox {
+
+ #quotebox {
     font-size:25px;
     margin-top: 30px;
     text-align: center;
@@ -32,12 +39,14 @@ h1 {
 #author {
     text-align: right;
     font-size: 22px;
-    font-style: italic;
+    /* font-style: italic; */
+    font-weight: bold;
 }
 .button {
     text-align: center;
     padding: 10px;
 }
+/* Quote Button Style */
 #quotebtn {
     border: 1px solid transparent;
     border-radius: 20px;
@@ -49,8 +58,9 @@ h1 {
      width: 150px;
      height: 50px;
      /* border-radius: 30px; */
-     background-color: transparent;
+     background-color: white;
      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+     
 }
 #quotebtn:hover {
     color: #000000;
